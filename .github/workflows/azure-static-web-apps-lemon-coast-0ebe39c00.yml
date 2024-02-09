@@ -34,7 +34,7 @@ jobs:
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
       - name: Give prisma permission
-        run: chmod 777 ./node_modules/.prisma/client/index.js
+        run: chmod 777 ./.prisma/client/index.js
       - name: Generate Prisma Client
         run: npx prisma generate
   close_pull_request_job:
